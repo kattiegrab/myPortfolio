@@ -117,6 +117,9 @@ body {
 	visibility: visible;
 }
 /* Resume */
+.resume-title {
+	color: #B2B2B2;
+}
 .resume i.fa {
 	color: #85b448;
 	font-weight: 400;
@@ -128,7 +131,7 @@ body {
 	display: inline-block;
 	padding-right: 10px;
 }
-.hobbies i.fa, .skills-list i.fa {
+.hobbies i.fa {
 	font-size: 20px;
 	background-color: #d86a39;
 	border-radius: 50%;
@@ -167,10 +170,7 @@ body {
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
-.img-portfolio_1 {
-	background: url("../images/bootstrap-page.jpg") 0/cover no-repeat;
-	min-height: 400px;
-}
+
 .img-portfolio_2 {
 	background: url("../images/picture-perfect-template.jpg") 0/cover no-repeat;
 	min-height: 400px;
@@ -178,6 +178,118 @@ body {
 .img-portfolio_3 {
 	background: url() 0/cover no-repeat;
 }
+/* Portfolio image effect */
+figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	height: 400px;
+	text-align: center;
+	cursor: pointer;
+}
+figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+figure figcaption,
+figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.effect-sarah {
+	background: #D86A39;
+}
+figure.effect-sarah img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+figure.effect-sarah:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-sarah figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 2em 0;
+	visibility: hidden;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+
+}
+figure.effect-sarah:hover h2 {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-sarah:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	visibility: visible;
+}
+
+figure.effect-sarah p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+	visibility: hidden;
+}
+
+figure.effect-sarah:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	visibility: visible;
+}
+
+
 /*Footer */
 footer {
 	background-color: #394657;
