@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,greek-ext,latin-ext');
+body {
+	font-family: 'Roboto Slab', serif;
+}
+/* Navigation */
+.main-nav {
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	bottom: 25px;
+	width: 270px;
+	z-index: 888;
+	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+	box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+	background-color: #FFFFFF;
+}
+.myPhoto {
+	max-width: 100%;
+	height: auto;
+}
+.nav {
+	text-align: right;
+	font-weight: 400;
+}
+.nav > li {
+	position: relative;
+	display: block;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.nav >li > a {
+	color: black;
+}
+.nav > li:hover > a {
+	color: #D86A39;
+}
+.social-media {
+	font-size: 25px;
+	line-height: 25px;
+	color: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 1;
+}
+.social-media_list {
+	list-style-type: none;
+}
+.social-media_list > li {
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+}
+.social-media_list > li > a {
+	color: #B7B7B7;
+}
+.social-media_list > li > a:hover {
+	color: #D86A39;
+}
+/*Jumbotron*/
+.jumbotron {
+	height: 100vh;
+	background: url("../images/woman-typing-blue.jpg") 0/cover no-repeat;
+	color: white;	
+}
+.hello {
+	padding-top: 80px;
+}
+.hello h1 {
+	margin-bottom: 0 !important;
+	margin-top: 100px;
+}
+.profession {
+	color: #5FA648;
+	font-weight: 500 !important;
+}
+.button-resume {
+	background-color: #D86A39;
+	border: none;
+	border-radius: 40px;
+	color: white;
+	text-align: center;
+	width: 180px;
+	transition: width visibility 2s;
+}
+.button-resume > i.fa {
+	visibility: hidden;
+}
+.button-resume:hover > i.fa {
+	visibility: visible;
+	color: #D86A39;
+}
+.button-resume:hover {
+	width: 200px;
+	color: #D86A39;
+	background-color: white;
+}
+.button-cv {
+	color: white;
+	background-color: transparent;
+	border: none;
+	width: 100px;
+	transition: width visibility 2s;
+	padding-right: 20px;
+}
+.button-cv:hover {
+	width: 120px;
+	background-color: transparent;
+	color: white; 
+}
+.button-cv i.fa {
+	visibility: hidden;
+}
+.button-cv:hover i.fa {
+	visibility: visible;
+}
+/* Resume */
+.resume i.fa {
+	color: #85b448;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 60px;
+}
+.hobbies li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 10px;
+}
+.hobbies i.fa, .skills-list i.fa {
+	font-size: 20px;
+	background-color: #d86a39;
+	border-radius: 50%;
+	color: white;
+	height: 56px;
+	width: 56px;
+	text-align: center;
+	line-height: 56px;
+}
+.resume-info-title {
+	margin-top: 50px;
+}
+.skills-list {
+	list-style-type: none;
+}
+.skills-list li {
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+}
+.skills-list li img {
+	height: 100px;
+	width: auto;
+	padding: 10px;
+}
+.myprograms img {
+	height: 100px;
+	width: auto;
+	margin-right: 15px;
+}
+/*Portfolio*/
+.portfolio {
+	background-color: #F8F8F8;
+}
+.img-div {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.img-portfolio_1 {
+	background: url("../images/bootstrap-page.jpg") 0/cover no-repeat;
+	min-height: 400px;
+}
+.img-portfolio_2 {
+	background: url("../images/picture-perfect-template.jpg") 0/cover no-repeat;
+	min-height: 400px;
+}
+.img-portfolio_3 {
+	background: url() 0/cover no-repeat;
+}
+/*Footer */
+footer {
+	background-color: #394657;
+	color: white;
+	min-height: 30px;
+}
+
+footer p {
+	margin-top: 5px;
+}
+
