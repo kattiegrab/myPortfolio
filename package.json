@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio Kasia Grabowska",
+  "main": "myPortfolio.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kattiegrab/myPortfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Kasia Grabowska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kattiegrab/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/kattiegrab/myPortfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
