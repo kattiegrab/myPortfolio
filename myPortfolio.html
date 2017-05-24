@@ -5,6 +5,7 @@
 	<title>myPortfolio - Katarzyna Grabowska</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/myPortfolio.css">
 </head>
 <body>
@@ -20,27 +21,27 @@
 		<div class="social-media">
 			<ul class="social-media_list">
 				<li>
-					<a href="">
+					<a href="https://github.com/kattiegrab" target="_blank">
 						<i class="fa fa-github-alt" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="http://codepen.io/kattiegrab/#" target="_blank">
 						<i class="fa fa-codepen" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="https://www.linkedin.com/in/katarzyna-grabowska-889791139/" target="_blank">
 						<i class="fa fa-linkedin" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="https://www.etsy.com/ie/shop/craftoholicsoul" target="_blank">
 						<i class="fa fa-etsy" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="mailto:kattie.grab@gmail.com">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 					</a>
 				</li>
@@ -52,13 +53,15 @@
 		<div class="jumbotron">
 			<div class="container">
 				<div class="row">
-					<p class="questions">
-						<i class="fa fa-comments" aria-hidden="true"></i>
-						Have you got any questions? Write to me at 
-						<span class="email"> 
-							<a href="">kattie.grab@gmail.com</a>
-						</span>
-					</p>
+					<div class="contactme">
+						<p class="questions">
+							<i class="fa fa-comments" aria-hidden="true"></i>
+							Have you got any questions? Write to me at 
+							<span class="email"> 
+								<a href="mailto:kattie.grab@gmail.com">kattie.grab@gmail.com</a>
+							</span>
+						</p>
+					</div>
 					<div class="hello">
 						<h1>Hi! I'm <strong>Kasia Grabowska</strong></h1>
 						<p class="profession">junior front end developer</p>
@@ -84,53 +87,39 @@
 					<i class="fa fa-id-card-o" aria-hidden="true"></i>
 					<h2><strong>About</strong> Me</h2>
 					<div class="resume_info">
-						<p></p>
+						<p> 
+							I am a self taught Front End Developer.
+							<br>
+							Lately I finished an online course at kodilla.com, to systematize my knowledge about web developing.
+							<br> 
+							My work involves lots of learning and exploring my creative side. 
+						</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title">
 					<i class="fa fa-code" aria-hidden="true"></i>
 					<h2>My <strong>Skills</strong></h2>
 					<div class="resume_info">
-						<ul class="skills-list">
-							<li>
-								<img src="images/HTML5.png" alt="HTML5">
-								<p>HTML5</p>
-							</li>
-							<li>
-								<img src="images/css3.png" alt="CSS3">
-								<p>CSS3</p>
-							</li>
-							<li>
-								<img src="images/javascript.png" alt="JavaScript">
-								<p>JavaScript</p>
-								<p>(basic)</p>
-							</li>
-							<li>
-								<img src="images/responsive-design.png" alt="RWD">
-								<p>RWD</p>
-							</li>
-							<li>
-								<img src="images/bootstrap-social-logo.png" alt="Bootstrap">
-								<p>Bootstrap</p>
-							</li>
-							<li>
-								<img src="images/jquery.png" alt="jQuery">
-								<p>jQuery</p>
-							</li>
-							<li>
-								<img src="images/sass.png">
-								<p>Sass</p>
-							</li>
-							<li>
-								<img src="images/git.png" alt="Git">
-								<img src="images/github.png" alt="Github">
-								<p>Git i Github</p>
-							</li>
-							<li>
-								<img src="images/og.png" alt="Grunt">
-								<p>Grunt</p>
-							</li>
-						</ul>
+						<div class="skills-list">
+							<div class="skills-group">
+								<i class="fa devicon-html5-plain-wordmark"></i>
+								<i class="fa devicon-css3-plain-wordmark"></i>
+								<i class="fa devicon-javascript-plain"></i>
+							</div>
+							<div class="skills-group">
+								<i class="fa devicon-bootstrap-plain-wordmark"></i>
+								<i class="fa devicon-sass-original"></i>
+								<i class="fa devicon-jquery-plain-wordmark"></i>
+							</div>
+							<div class="skills-group">
+								<i class="fa devicon-git-plain"></i>
+								<i class="fa devicon-grunt-line-wordmark"></i>
+							</div>
+							<div class="skills-group">
+								<p>ResponsiWeb Design</p>
+								<p>Pixel Perfect</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title">
@@ -140,17 +129,7 @@
 						<p></p>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title">
-					<i class="fa fa-tasks" aria-hidden="true"></i>
-					<h2><strong>Programs I</strong> like to <strong>use</strong></h2>
-					<div class="resume_info">
-						<div class="myprograms">
-							<img src="images/Sublime_Text_Logo.png" alt="Sublime Text">
-							<img src="images/avocode.png" alt="Avocode">
-							<img src="images/gimp.png" alt="Gimp">
-						</div>
-					</div>
-				</div>
+				
 				<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 resume-info-title">
 					<i class="fa fa-paint-brush" aria-hidden="true"></i>
 					<h2>My <strong>Hobbies</strong></h2>
@@ -209,19 +188,32 @@
 		</div>
 	</section>
 <!-- Contact -->
-	<section class="contact" id="contact"></section>
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-info">
+					<h3>Don't hesitate to <strong>contact me</strong>!</h3>
+
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-form">
+
+				</div>
+			</div>
+		</div>
+	</section>
 <!-- Footer -->
 	<footer>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 text-uppercase text-center">
-					<p class="copyright">© Kasia Grabowska</p>
+					<p class="copyright">© 2017 Kasia Grabowska</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 <!-- .................. SCRIPTS ................ -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/myPortfolio.js"></script>
 
 </body>

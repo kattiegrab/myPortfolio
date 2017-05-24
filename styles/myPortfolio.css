@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,greek-ext,latin-ext');
 body {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab' !important, serif;
 }
 /* Navigation */
 .main-nav {
@@ -27,9 +27,15 @@ body {
 	position: relative;
 	display: block;
 	border-bottom: 1px solid rgba(0,0,0,.1);
+	
 }
 .nav >li > a {
 	color: black;
+}
+.nav > li > a:focus {
+	background-color: #F4A339;
+	color: white;
+	border-radius: 30px;
 }
 .nav > li:hover > a {
 	color: #D86A39;
@@ -63,14 +69,13 @@ body {
 .jumbotron {
 	height: 100vh;
 	background: url("../images/woman-typing-blue.jpg") 0/cover no-repeat;
-	color: white;	
+	color: white;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;	
 }
-.hello {
-	padding-top: 80px;
-}
-.hello h1 {
-	margin-bottom: 0 !important;
-	margin-top: 100px;
+.email a {
+	color: #5FA648 !important;
 }
 .profession {
 	color: #5FA648;
@@ -117,6 +122,9 @@ body {
 	visibility: visible;
 }
 /* Resume */
+.resume {
+	margin-bottom: 50px;
+}
 .resume-title {
 	color: #B2B2B2;
 }
@@ -125,6 +133,15 @@ body {
 	font-weight: 400;
 	font-size: 60px;
 	line-height: 60px;
+}
+.resume-info-title {
+	margin-top: 50px;
+}
+/* Resume - hobbies */
+.resume-info-title {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
 }
 .hobbies li {
 	list-style-type: none;
@@ -141,26 +158,21 @@ body {
 	text-align: center;
 	line-height: 56px;
 }
-.resume-info-title {
-	margin-top: 50px;
+/* Resume -skills */
+.skills-group i.fa {
+	font-size: 80px;
+	line-height: 80px;
+	padding: 15px;
+	color: #D86A39;
 }
-.skills-list {
-	list-style-type: none;
-}
-.skills-list li {
-	display: inline-block;
-	margin-right: 10px;
-	text-align: center;
-}
-.skills-list li img {
-	height: 100px;
-	width: auto;
+.skills-group p {
 	padding: 10px;
+	color: #D86A39;
+	font-size: 20px;
 }
-.myprograms img {
-	height: 100px;
-	width: auto;
-	margin-right: 15px;
+.skills-group p::before {
+  content: "• ";
+  color: #D86A39;
 }
 /*Portfolio*/
 .portfolio {
@@ -169,14 +181,6 @@ body {
 .img-div {
 	margin-top: 100px;
 	margin-bottom: 100px;
-}
-
-.img-portfolio_2 {
-	background: url("../images/picture-perfect-template.jpg") 0/cover no-repeat;
-	min-height: 400px;
-}
-.img-portfolio_3 {
-	background: url() 0/cover no-repeat;
 }
 /* Portfolio image effect */
 figure {
@@ -299,5 +303,38 @@ footer {
 
 footer p {
 	margin-top: 5px;
+}
+
+/* Media queries */
+@media (max-width: 1350px) {
+/* Navigation */
+	.main-nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 88px;
+		width: 100vw;
+		z-index: 222;
+		box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+		display: flex;
+	}
+	.myPhoto {
+		height: 100%;
+		display: inline-block;
+		line-height: 1;
+	}
+	.nav {
+	text-align: center;
+	padding-left: 0;
+	}
+	.nav > li {
+		margin-top: 0;
+		display: inline-block;
+		border-bottom: none;
+	}
+	.nav > li > a {
+		margin-top: 25px;
+	}
 }
 
