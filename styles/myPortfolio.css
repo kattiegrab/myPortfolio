@@ -2,6 +2,9 @@
 body {
 	font-family: 'Roboto Slab' !important, serif;
 }
+.container {
+	width: 1000px;
+}
 /* Navigation */
 .main-nav {
 	position: fixed;
@@ -33,13 +36,11 @@ body {
 	color: black;
 }
 .nav > li > a:focus {
-	background-color: #F4A339;
+	background-color: #D86A39;
 	color: white;
 	border-radius: 30px;
 }
-.nav > li:hover > a {
-	color: #D86A39;
-}
+
 .social-media {
 	font-size: 25px;
 	line-height: 25px;
@@ -292,8 +293,22 @@ figure.effect-sarah:hover p {
 	transform: translate3d(0,0,0);
 	visibility: visible;
 }
-
-
+/* Contact */
+.contact {
+	background: white;
+	height: 80vh; 
+	background: url("../images/contact.jpeg") 0/cover no-repeat;
+}
+.contact-info {
+	background-color: #85B448; 
+	float: right;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+	height: 50vh;
+	opacity: 0.7;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
 /*Footer */
 footer {
 	background-color: #394657;
@@ -307,6 +322,7 @@ footer p {
 
 /* Media queries */
 @media (max-width: 1350px) {
+
 /* Navigation */
 	.main-nav {
 		position: fixed;
@@ -338,3 +354,14 @@ footer p {
 	}
 }
 
+@media only screen and (max-width: 1480px) and (min-width: 1349px) {
+	.main-nav {
+		width: 230px;
+	}
+	ul.social-media_list {
+		padding-left: 0;
+	}
+	.container {
+		width: 900px;
+	}
+}
