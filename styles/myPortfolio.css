@@ -5,6 +5,9 @@ body {
 .container {
 	width: 1000px;
 }
+.hideme {
+	opacity: 0;
+}
 /* Navigation */
 .main-nav {
 	position: fixed;
@@ -66,6 +69,7 @@ body {
 .social-media_list > li > a:hover {
 	color: #D86A39;
 }
+
 /*Jumbotron*/
 .jumbotron {
 	height: 100vh;

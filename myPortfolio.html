@@ -9,8 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="styles/myPortfolio.css">
 </head>
 <body>
+
 <!-- Navigation -->
-	<section class="main-nav">
+	<section class="main-nav hideme">
 		<img class="myPhoto" src="images/itsme.jpg">
 		<ul class="nav">
 			<li class="nav_item"><a href="#start">Start</a></li>
@@ -49,11 +50,11 @@
 		</div>
 	</section>
 <!-- Jumbotron -->
-	<section class="welcome-header text-center" id="start">
+	<section class="welcome-header text-center" id="start hideme">
 		<div class="jumbotron">
 			<div class="container">
 				<div class="row">
-					<div class="contactme">
+					<div class="contactme hideme">
 						<p class="questions">
 							<i class="fa fa-comments" aria-hidden="true"></i>
 							Have you got any questions? Write to me at 
@@ -62,7 +63,7 @@
 							</span>
 						</p>
 					</div>
-					<div class="hello">
+					<div class="hello hideme">
 						<h1>Hi! I'm <strong>Kasia Grabowska</strong></h1>
 						<p class="profession">junior front end developer</p>
 						<button class="button-resume btn btn-default btn-lg">
@@ -83,7 +84,7 @@
 		<div class="container">
 			<div class="row">
 				<h5 class="resume-title text-uppercase">resume</h5>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title hideme">
 					<i class="fa fa-id-card-o" aria-hidden="true"></i>
 					<h2><strong>About</strong> Me</h2>
 					<div class="resume_info">
@@ -96,7 +97,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title hideme">
 					<i class="fa fa-code" aria-hidden="true"></i>
 					<h2>My <strong>Skills</strong></h2>
 					<div class="resume_info">
@@ -122,15 +123,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title hideme">
 					<i class="fa fa-calendar-o" aria-hidden="true"></i>
 					<h2>My <strong>Education</strong> and Jobs</h2>
-					<div class="resume_info">
+					<div class="resume_info hideme">
 						<p></p>
 					</div>
 				</div>
 				
-				<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 resume-info-title">
+				<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 resume-info-title hideme">
 					<i class="fa fa-paint-brush" aria-hidden="true"></i>
 					<h2>My <strong>Hobbies</strong></h2>
 					<div class="resume_info">
@@ -161,7 +162,7 @@
 	<section class="portfolio" id="portfolio">
 		<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-div">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-div hideme">
 				<figure class="effect-sarah">
 					<img src="images/bootstrap-page2.jpg">
 					<figcaption>
@@ -171,7 +172,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-div">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-div hideme">
 				<figure class="effect-sarah">
 					<img src="images/picture-perfect-template.jpg">
 					<figcaption>
@@ -181,7 +182,7 @@
 					</figcaption>
 				</figure>	
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-div">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-div hideme">
 				<div class="img-portfolio_3 img-effect"></div>
 			</div>
 		</div>
@@ -191,11 +192,11 @@
 	<section class="contact" id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-info">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-info hideme">
 					<h3>Don't hesitate to <strong>contact me</strong>!</h3>
 
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-form">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-form hideme">
 
 				</div>
 			</div>
@@ -214,6 +215,7 @@
 <!-- .................. SCRIPTS ................ -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	<script type="text/javascript" src="scripts/myPortfolio.js"></script>
 
 </body>
