@@ -50,7 +50,7 @@
 		</div>
 	</section>
 <!-- Jumbotron -->
-	<section class="welcome-header text-center" id="start hideme">
+	<section class="welcome-header text-center" id="start">
 		<div class="jumbotron">
 			<div class="container">
 				<div class="row">
@@ -66,10 +66,12 @@
 					<div class="hello hideme">
 						<h1>Hi! I'm <strong>Kasia Grabowska</strong></h1>
 						<p class="profession">junior front end developer</p>
-						<button class="button-resume btn btn-default btn-lg">
-							Go to my resume! 
-							<i class="fa fa-arrow-down" aria-hidden="true"></i> 
-						</button>
+						<a href="#resume">
+							<button class="button-resume btn btn-default btn-lg">
+								Go to my resume! 
+								<i class="fa fa-arrow-down" aria-hidden="true"></i> 
+							</button>
+						</a>
 						<button class="button-cv btn btn-default">
 							Download my CV
 							<i class="fa fa-link" aria-hidden="true"></i>
@@ -84,57 +86,78 @@
 		<div class="container">
 			<div class="row">
 				<h5 class="resume-title text-uppercase">resume</h5>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title hideme">
-					<i class="fa fa-id-card-o" aria-hidden="true"></i>
-					<h2><strong>About</strong> Me</h2>
-					<div class="resume_info">
-						<p> 
-							I am a self taught Front End Developer.
-							<br>
-							Lately I finished an online course at kodilla.com, to systematize my knowledge about web developing.
-							<br> 
-							My work involves lots of learning and exploring my creative side. 
-						</p>
+			<!-- .............. Resume - About me ................. -->	
+				<div class="resume_info">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 resume-info-title hideme">
+						<i class="fa fa-id-card-o" aria-hidden="true"></i>
+						<h2><strong>About</strong> Me</h2>
+					</div>
+						<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<div class="resume_info-about">
+							<p> 
+								I am a self taught Front End Developer.
+								<br>
+								Lately I finished an online course at kodilla.com, to systematize my knowledge about web developing.
+								<br> 
+								My work involves lots of learning and exploring my creative side.
+								<br>
+								 I am highly motivated to expand my knowledge about programming. In the future I want to learn more programming languages, which will help me in my work. 
+							</p>
+						</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title hideme">
-					<i class="fa fa-code" aria-hidden="true"></i>
-					<h2>My <strong>Skills</strong></h2>
-					<div class="resume_info">
-						<div class="skills-list">
-							<div class="skills-group">
-								<i class="fa devicon-html5-plain-wordmark"></i>
-								<i class="fa devicon-css3-plain-wordmark"></i>
-								<i class="fa devicon-javascript-plain"></i>
-							</div>
-							<div class="skills-group">
-								<i class="fa devicon-bootstrap-plain-wordmark"></i>
-								<i class="fa devicon-sass-original"></i>
-								<i class="fa devicon-jquery-plain-wordmark"></i>
-							</div>
-							<div class="skills-group">
-								<i class="fa devicon-git-plain"></i>
-								<i class="fa devicon-grunt-line-wordmark"></i>
-							</div>
-							<div class="skills-group">
-								<p>ResponsiWeb Design</p>
-								<p>Pixel Perfect</p>
+			<!-- ............. Resume - Skills .............. -->
+			<div class="row">
+				<div class="resume_info">				
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 resume-info-title hideme">
+						<i class="fa fa-code" aria-hidden="true"></i>
+						<h2>My <strong>Skills</strong></h2>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+							<div class="skills-list">
+								<div class="skills-group">
+									<i class="fa html5 devicon-html5-plain-wordmark"></i>
+									<i class="fa devicon-css3-plain-wordmark"></i>
+									<i class="fa devicon-javascript-plain"></i>
+								</div>
+								<div class="skills-group">
+									<i class="fa devicon-bootstrap-plain-wordmark"></i>
+									<i class="fa devicon-sass-original"></i>
+									<i class="fa devicon-jquery-plain-wordmark"></i>
+								</div>
+								<div class="skills-group">
+									<i class="fa devicon-git-plain"></i>
+									<i class="fa devicon-grunt-line-wordmark"></i>
+								</div>
+								<div class="skills-group">
+									<p>ResponsiWeb Design</p>
+									<p>Pixel Perfect</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 resume-info-title hideme">
-					<i class="fa fa-calendar-o" aria-hidden="true"></i>
-					<h2>My <strong>Education</strong> and Jobs</h2>
-					<div class="resume_info hideme">
-						<p></p>
+			<!-- ................... Resume - Education and Jobs .............. -->	
+			<div class="row">
+				<div class="resume_info education">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 resume-info-title hideme">
+						<i class="fa fa-calendar-o" aria-hidden="true"></i>
+						<h2>My <strong>Education</strong> and Jobs</h2>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 hideme">
+						<p>Before I started learning programming, I finished my Medical Postgraduated School and I was working as a Dental Hygienist. Last two years though I spent in Ireland. During my free time, I had a chance to study programming and during this period, I decided to start a new path of my career in the same field. Lately, I have finished an online Bootcamp of Front End Developing to enhance my knowledge and now I hope to start my new job as a Junior Front End Developer very soon.</p>
 					</div>
 				</div>
-				
-				<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 resume-info-title hideme">
-					<i class="fa fa-paint-brush" aria-hidden="true"></i>
-					<h2>My <strong>Hobbies</strong></h2>
-					<div class="resume_info">
+			</div>
+			<!-- .................... Resume - Hobbies .................... -->	
+			<div class="row no-border">
+				<div class="resume_info">
+					<div class="col-xs-12 col-sm-12 col-lg-4 col-md-4 resume-info-title hideme">
+						<i class="fa fa-paint-brush" aria-hidden="true"></i>
+						<h2 class="hobby-title">My <strong>Hobbies</strong></h2>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">	
 						<ul class="hobbies">
 							<li>	
 								<i class="fa fa-scissors" aria-hidden="true"></i>
