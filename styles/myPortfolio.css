@@ -2,9 +2,7 @@
 body {	
     font-family: 'Nunito', sans-serif;
 }
-.container {
-	width: 1000px;
-}
+
 /*.hideme {
 	opacity: 0;
 }*/
@@ -448,6 +446,9 @@ footer a {
 	.nav > li > a {
 		margin-top: 25px;
 	}
+	.contact-info {
+		float: none;
+	}
 }
 
 @media only screen and (max-width: 1480px) and (min-width: 1330px) {
@@ -467,10 +468,18 @@ footer a {
 }
 @media (max-width: 1580px) and (min-width: 1479px) {
 	.main-nav {
-		width: 220px;
+		width: 200px;
 	}
 	.social-media {
 	font-size: 18px;
 	line-height: 18px;
+	}
+}
+@media (max-width: 1700px) and (min-width: 1450px) {
+	.container {
+		margin-left: 250px;
+	}
+	.main-nav {
+		width: 200px;
 	}
 }
