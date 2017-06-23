@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic,greek-ext,latin-ext');
-body {
-	font-family: 'Roboto Slab' !important, serif;
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+body {	
+    font-family: 'Nunito', sans-serif;
 }
 .container {
 	width: 1000px;
@@ -148,7 +148,9 @@ body {
 }
 .resume_info-about p {
 	margin-top: 100px;
-	font-size: 25px;
+	font-size: 15px;
+	color: #4B5864;
+	line-height: 21px;
 	padding-bottom: 50px;
 }
 /* Resume - hobbies */
@@ -179,14 +181,43 @@ body {
 }
 .skills-group i.fa {
 	font-size: 80px;
-	line-height: 80px;
+	line-height: 100px;
 	padding: 15px;
 	color: #85b448;
 	margin-bottom: 15px;
+	transition: color font-size 5s;
+	transition-timing-function: ease-in;
 }
-.skills-group i:hover.html5 {
-	filter: url();
+/* Skills icons hover effect */
+.skills-group i:hover.fa {
+	font-size: 90px;
 }
+.skills-list > .skills-group i:hover.html5 {
+	color: #E54D26;
+}
+.skills-list > .skills-group i:hover.css3 {
+	color: #3D8FC6;
+}
+.skills-list > .skills-group i:hover.js {
+	color: #F0DB4F;
+}
+.skills-list > .skills-group i:hover.bootstrap {
+	color: #59407F;
+}
+.skills-list > .skills-group i:hover.sass {
+	color: #CC6699;
+}
+.skills-list > .skills-group i:hover.jquery {
+	color: #0769AD;
+}
+.skills-list > .skills-group i:hover.git {
+	color: #F34F29;
+}
+.skills-list > .skills-group i:hover.grunt {
+	color: #FCAA1A;
+}
+
+/*-------------------------*/
 .skills-group p {
 	padding-top: 10px;
 	color: #85b448;
@@ -205,6 +236,8 @@ body {
 }
 .img-div {
 	margin-top: 100px;
+}
+.marginbottom {
 	margin-bottom: 100px;
 }
 /* Portfolio image effect */
@@ -214,7 +247,7 @@ figure {
 	display: inline-block;
 	overflow: hidden;
 	margin: -0.135em;
-	height: 400px;
+	height: 350px;
 	text-align: center;
 	cursor: pointer;
 }
@@ -258,6 +291,7 @@ figure.effect-sarah img {
 	backface-visibility: hidden;
 }
 figure.effect-sarah:hover img {
+	
 	opacity: 0.4;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -320,8 +354,10 @@ figure.effect-sarah:hover p {
 /* Contact */
 .contact {
 	background: white;
-	height: 80vh; 
+	height: 50vh; 
 	background: url("../images/contact.jpeg") 0/cover no-repeat;
+	text-align: center;
+	margin: 0 auto;
 }
 .contact-info {
 	background-color: #85B448; 
@@ -329,11 +365,27 @@ figure.effect-sarah:hover p {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border-radius: 5px;
-	height: 50vh;
+	height: 30vh;
 	opacity: 0.7;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
-/*Footer */
+.contact i.fa {
+	font-size: 30px;
+	line-height: 30px;
+}
+.contact_email i.fa {
+	margin-top: 30px;
+}
+.contact p {
+	margin-top: 10px;
+}
+.contact a {
+	color: inherit;
+
+}
+/* ==============
+      Footer 
+================ */
 footer {
 	background-color: #394657;
 	color: white;
@@ -343,9 +395,28 @@ footer {
 footer p {
 	margin-top: 5px;
 }
+footer i.fa {
+	padding-left: 30px;
+	font-size: 18px;
+	line-height: 18px;
+	transition-timing-function: ease-in-out;
+	transition-duration: .5s;
+	transition-property: color font-size;
+	position: absolute;
+	bottom: 10px;
+	right: 42%;
+}
+footer i:hover.fa {
+	color: #4A4C4F;
+	font-size: 20px;
+}
+footer a {
+	color: inherit;
+/* ===================== 
+        Media queries 
+========================= */
 
-/* Media queries */
-@media (max-width: 1350px) {
+@media (max-width: 1329px) {
 
 /* Navigation */
 	.main-nav {
@@ -378,14 +449,27 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 1480px) and (min-width: 1349px) {
+@media only screen and (max-width: 1480px) and (min-width: 1330px) {
 	.main-nav {
-		width: 230px;
+		width: 180px;
 	}
 	ul.social-media_list {
 		padding-left: 0;
 	}
 	.container {
 		width: 900px;
+	}
+	.social-media {
+	font-size: 20px;
+	line-height: 20px;
+	}
+}
+@media (max-width: 1580px) and (min-width: 1479px) {
+	.main-nav {
+		width: 220px;
+	}
+	.social-media {
+	font-size: 18px;
+	line-height: 18px;
 	}
 }
