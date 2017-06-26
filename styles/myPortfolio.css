@@ -110,12 +110,13 @@ body {
 	background-color: transparent;
 	border: none;
 	width: 100px;
-	transition: width visibility 2s;
+	transition: width background-color 2s;
 	padding-right: 20px;
+	border-radius: 40px;
 }
 .button-cv:hover {
 	width: 120px;
-	background-color: transparent;
+	background-color: #2E3E4E;
 	color: white; 
 }
 .button-cv i.fa {

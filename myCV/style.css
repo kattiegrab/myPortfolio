@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i');
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #EAE8E7;
+}
+.container {
+	margin-bottom: 50px;
+}
+.margin-bottom {
+	margin-bottom: 20px;
+}
+.border {
+	border-bottom: 1px solid #4A4C4F;
+	padding-bottom: 20px;
+}
+
+/* ============== 
+	SIDEBAR 
+=============== */
+.sidebar {
+	color: #4A4C4F;
+	background-color: #D86A39;
+	margin-top: 50px;
+	text-align: left;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.sidebar img {
+	max-width: 100%;
+	height: auto;
+}
+.sidebar .contact {
+	border-bottom: 1px solid #b86318;
+}
+.sidebar .contact h1  {
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+.sidebar .heading .title {
+	color: white;
+	position: absolute;
+	right: 11px;
+	top: 246px;
+}
+.sidebar .heading .title .profession {
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+	line-height: 15pt;
+}
+.sidebar .contact .contact_icon {
+	background-color: #4A4C4F;
+	color: #D86A39;
+	margin-left: -15px;
+	margin-bottom: 10px;
+	text-align: right;
+	font-size: 22px;
+	line-height: 22px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.sidebar .contact .contact_info a {
+	color: #4A4C4F;
+	font-size: 18px;
+}
+.sidebar .hobby {
+	margin-bottom: 20px;
+}
+.sidebar .hobby i.fa {
+	background-color: #4A4C4F;
+	color: #D86A39;
+	font-size: 22px;
+	line-height: 22px;
+	padding: 10px;
+	text-align: center;
+}
+.sidebar .hobby p {
+	font-size: 18px;
+	margin-top: 10px;
+}
+.sidebar .hobby a {
+	color: inherit;
+}
+.sidebar .hobby .row {
+	text-align: center;
+	margin-top: 15px;
+}
+/* ======================
+	Main container - profile
+========================= */
+.main {
+	float: left;
+	padding-left: 32px;
+	margin-top: 50px;
+	color: #4A4C4F;
+}
+.main .box {
+	background-color: white;
+	overflow: hidden;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	margin-bottom: 24px;
+	padding-bottom: 24px !important;
+	padding-right: 25px;
+}
+.main i.fa {
+	text-align: center;
+	display: block;
+	font-size: 30pt;
+	margin-top: 20px;
+}
+.main .profile p {
+	margin-right: 10px;
+	font-size: 15px;
+}
+.main .education .date, .main .experience .date {
+	color: #e67e22;
+	font-size: 10pt;
+	line-height: 15pt;
+}
+.main .education h4, .main .experience h4 {
+	font-size: 12pt;
+	line-height: 20pt;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.main .skills h1 {
+	margin-bottom: 20px;
+}
+.main .skills .skills_list h4 {
+	margin-bottom: 15px;
+}
