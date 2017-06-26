@@ -38,10 +38,10 @@ body {
 	margin-bottom: 25px;
 }
 .sidebar .heading .title {
-	color: white;
+	color: #D86A39;
 	position: absolute;
 	right: 11px;
-	top: 246px;
+	top: 356px;
 }
 .sidebar .heading .title .profession {
 	margin: 0;
@@ -132,3 +132,15 @@ body {
 .main .skills .skills_list h4 {
 	margin-bottom: 15px;
 }
+
+@media print {
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.main {
+		float: none;
+	}
+}
+
