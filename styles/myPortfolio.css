@@ -184,7 +184,7 @@ body {
 	padding: 15px;
 	color: #85b448;
 	margin-bottom: 15px;
-	transition: color font-size 5s;
+	transition: color .5s, font-size .5s;
 	transition-timing-function: ease-in;
 }
 /* Skills icons hover effect */
