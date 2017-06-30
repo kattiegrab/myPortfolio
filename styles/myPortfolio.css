@@ -364,7 +364,6 @@ figure.effect-sarah:hover p {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border-radius: 5px;
-	height: 30vh;
 	opacity: 0.7;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
@@ -381,6 +380,9 @@ figure.effect-sarah:hover p {
 .contact a {
 	color: inherit;
 
+}
+.contact_tel {
+	margin-bottom: 30px;
 }
 /* ==============
       Footer 
