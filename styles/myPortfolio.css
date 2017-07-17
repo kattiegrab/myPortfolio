@@ -187,10 +187,16 @@ body {
 	transition: color .5s, font-size .5s;
 	transition-timing-function: ease-in;
 }
-/* Skills icons hover effect */
-.skills-group i:hover.fa {
-	font-size: 90px;
+/* Skills tooltips */
+[data-title] {
+	
 }
+
+
+/* Skills icons hover effect */
+/*.skills-group i.fa:hover {
+	font-size: 90px;
+}*/
 .skills-list > .skills-group i:hover.html5 {
 	color: #E54D26;
 }
@@ -288,6 +294,7 @@ figure.effect-sarah img {
 	transform: translate3d(-10px,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	object-fit: cover;
 }
 figure.effect-sarah:hover img {
 	
