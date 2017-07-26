@@ -215,7 +215,9 @@ body {
 .skills-list > .skills-group i:hover.grunt {
 	color: #FCAA1A;
 }
-
+.skills-list > .skills-group i:hover.gulp {
+	color: #EB4A4B;
+}
 /*-------------------------*/
 .skills-group p {
 	padding-top: 10px;
