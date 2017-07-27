@@ -187,10 +187,16 @@ body {
 	transition: color .5s, font-size .5s;
 	transition-timing-function: ease-in;
 }
-/* Skills icons hover effect */
-.skills-group i:hover.fa {
-	font-size: 90px;
+/* Skills tooltips */
+[data-title] {
+	
 }
+
+
+/* Skills icons hover effect */
+/*.skills-group i.fa:hover {
+	font-size: 90px;
+}*/
 .skills-list > .skills-group i:hover.html5 {
 	color: #E54D26;
 }
@@ -217,6 +223,9 @@ body {
 }
 .skills-list > .skills-group i:hover.gulp {
 	color: #EB4A4B;
+}
+.skills-list > .skills-group i:hover.foundation {
+	color: #008CBA;
 }
 /*-------------------------*/
 .skills-group p {
@@ -290,6 +299,7 @@ figure.effect-sarah img {
 	transform: translate3d(-10px,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	object-fit: cover;
 }
 figure.effect-sarah:hover img {
 	
@@ -399,7 +409,7 @@ footer p {
 	margin-top: 5px;
 }
 footer i.fa {
-	padding-left: 30px;
+	padding-left: 40px;
 	font-size: 18px;
 	line-height: 18px;
 	transition-timing-function: ease-in-out;
@@ -407,7 +417,7 @@ footer i.fa {
 	transition-property: color font-size;
 	position: absolute;
 	bottom: 10px;
-	right: 42%;
+	right: 40%;
 }
 footer i:hover.fa {
 	color: #4A4C4F;
